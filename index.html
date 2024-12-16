@@ -11,34 +11,48 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <form action="">
+    
+    <h1>Contact Us</h1>
+    <label for="first_name">First Name *</label><br>
+    <input type="text" id="first_name" name="first_name"><br>
+    This field is required <br>
+<!-- tirar os br depois pra organizar a visualização-->
 
-  Contact Us
+    <label for="last_name">Last Name *</label><br>
+    <input type="text" id="last_name" name="last_name"><br>
+    This field is required <br>
 
-  First Name
-  This field is required
 
-  Last Name
-  This field is required
+    <label for="client_email">Email Address</label> <br>
+    <input type="email" id="client_email"> <br>
+    Please enter a valid email address <br>
+    This field is required <br> <br>
 
-  Email Address
-  Please enter a valid email address
-  This field is required
 
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
+    
+    <input type="radio" id="gen_enquiry" name="query_type" value="General Enquiry">
+    <label for="gen_enquiry">General Enquiry</label>
 
-  Message
-  This field is required
+    <input type="radio" id="sup_request" name="query_type" value="Support Request">
+    <label for="sup_request">Support Request</label> <br>
+    Please select a query type <br> <br>
 
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
+  
+    <label for="client_msg"></label>Message
+    <input type="textarea" id="client_msg">
+    This field is required <br> <br>
+    <input type="checkbox">
+    I consent to being contacted by the team * <br>
+    To submit this form, please consent to being contacted <br> <br>
+    <input type="submit">
+    Submit
+    
+    Message Sent! <br> <br>
 
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
+    
+    Thanks for completing the form. We'll be in touch soon!
+  </form>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
